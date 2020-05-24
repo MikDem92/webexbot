@@ -25,7 +25,7 @@ language(s) of choice.
     + [Edit setup file](#edit-setup-file)
     + [Register webhook](#register-webhook)
     + [Create bot logic](#create-bot-logic)
- * [Authors & Maintainers](#authors-and-maintainers)
+ * [Authors and Maintainers](#authors-and-maintainers)
  * [Disclaimer](#disclaimer)
 
 ---
