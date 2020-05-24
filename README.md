@@ -1,4 +1,4 @@
-### Webex Teams Bot - Template
+## Webex Teams Bot - Template
 
 Cisco's Webex Teams offers a woderful platform for bot creation. However, 
 many people who are new to the world of ChatOps and Cisco's REST APIs are
@@ -14,6 +14,6 @@ The template is written in PHP, because it is the most common language for
 backend development. The webhook creation and registration script is written 
 in Python as it is a simple solution for creating a script that can be run
 right away. This being said, the bot itself can be written in any language 
-and then be executed with the exec() from inside PHP. Therefore, this
+and then be executed with the *exec()* from inside PHP. Therefore, this
 template can serve as a wrapper for the bot functions written in the users'
 language(s) of choice.
