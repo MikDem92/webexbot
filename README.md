@@ -1,6 +1,6 @@
 # Webex Teams Bot - Template
 
-Cisco's Webex Teams offers a woderful platform for bot creation. However, 
+Cisco's Webex Teams offers a wonderful platform for bot creation. However, 
 many people who are new to the world of ChatOps and Cisco's REST APIs are
 struggling with creation of bots and their integration with existing services.
 So, the goal of this project is to provide a simple to use template for
