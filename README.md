@@ -26,7 +26,7 @@ language(s) of choice.
     + [Register webhook](#register-webhook)
     + [Create bot logic](#create-bot-logic)
  * [Authors & Maintainers](#authors---maintainers)
- * [Disclaimer](#authors---maintainers)
+ * [Disclaimer](#disclaimer)
 
 ---
 
@@ -68,7 +68,7 @@ folder. Go to the *answer()* function and edit the highlighted part of the code 
 
 ---
 
-## Autors & Maintainers
+## Authors & Maintainers
 
 I am the sole author and maintainer of the project. If you have any questions, comments and/or suggestions,
 do not hesitate to contact me directly.
