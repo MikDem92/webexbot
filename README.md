@@ -25,8 +25,6 @@ language(s) of choice.
     + [Edit setup file](#edit-setup-file)
     + [Register webhook](#register-webhook)
     + [Create bot logic](#create-bot-logic)
- * [Authors and Maintainers](#authors-and-maintainers)
- * [Disclaimer](#disclaimer)
 
 ---
 
@@ -35,48 +33,44 @@ language(s) of choice.
 In order to run the bot in operation, you need the following:
 - A web-server running PHP7
 - Reachability to the Webex cloud
-- Python 3.X with **requests** and **json** libraries installed
-- Webex Teams bot credentials (*access token* and *bot ID*) from developer.webex.com
+- Python 3.X
+- Webex Teams bot credentials (**Access token** and **Bot ID**) from **developer.webex.com**
 
 ---
 
 ## 2. Setup
 
 After copying the repository to your server, the bot need to be set up for development, testing and operation.
-This is done in three steps that need to be completed in the following order:
-- Edit **setup.json**
-- Register the webhook with **register.py**
-- Edit **webexbot.php** to add some functionality to the bot
+This is done in four steps that need to be completed in the following order:
+- Install required Python libraries
+- Edit `setup.json`
+- Register the webhook with `register.py`
+- Edit `webexbot.php` to add some functionality to the bot
+
+
+### Install required Python libraries
+Open up the terminal and type in:
+
+```bash
+$ pip3 install -r requirements.txt
+```
 
 ### Edit setup file
-The **setup.json** file serves as a container for all the environment variables needed to set up the bot.
+The `setup.json` file serves as a container for all the environment variables needed to set up the bot.
 By default, all the variables are blank, so you need to fill in your personal information:
-- **target_url:** The URL of the folder inside your server where all the bot files are hosted
-- **webhook_name:** An arbitrary name for the webhook
-- **access_token:** Access token of the bot
-- **bot_id:** Bot ID
+- `target_url`: The URL of the folder inside your server where all the bot files are hosted
+- `webhook_name`: An arbitrary name for the webhook
+- `access_token`: Access token of the bot
+- `bot_id`: Bot ID
 
 ### Register webhook
 As a next step you need to create and register a webhook. For this, open up the console inside the repository folder
 and type in:
 
-**python3 register.py**
+```bash
+$ python3 register.py
+```
 
 ### Create bot logic
-Now, in order to create some functionality for the bot, you need to edit **webexbot.py** inside the */includes*
-folder. Go to the *answer()* function and edit the highlighted part of the code at your will.
-
----
-
-## Authors and Maintainers
-
-I am the sole author and maintainer of the project. If you have any questions, comments and/or suggestions,
-do not hesitate to contact me directly.
-
----
-
-## Disclaimer
-
-This project is in no way related to my current or past employers. It is a product of my own and is created and maintained
-merely as a display of my personal work. It is available for free and fair use. However, I do not hold any responsibility
-for any damage it may cause when deployed in a production environment.
+Now, in order to create some functionality for the bot, you need to edit `webexbot.py` inside the `/includes`
+folder. Go to the `answer()` function and edit the highlighted part of the code at your will.
